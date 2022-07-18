@@ -5,12 +5,17 @@ body{
 }
 main{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    
 }
 .container{
     background-color:#FFFFFF;
     width: 870px;
     padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
 }
 hr{
     border: 1px solid #D1D1D1;
@@ -49,6 +54,8 @@ hr{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 26px;
+    
+   
 }
 
 .blog{
@@ -72,4 +79,45 @@ hr{
 .blog-author a{
     text-decoration: none;
     color:#562EFF;
+}
+/* -----------
+Course Style
+-------------- */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    box-shadow: (0px 5.34229px 13.3557px rgba(50, 47, 47, 0.267));
+}
+.course{
+    width: 253px;
+    filter: drop-shadow(0px 5.34229px 13.3557px rgba(50, 47, 47, 0.214));
+    border: 0.3px groove rgba(0, 0, 0, 0.05);
+    border-radius: 5px ;
+    padding: 10px;
+    
+}
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fa-sta{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color:#AEAEAE;
+}
+.course-duration{
+    background: #FFE4E8;
+    border-radius: 14.6913px;
+    color: #FF4A60;
+   
 }
